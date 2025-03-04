@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 4rem;
+    color: rgb(12, 99, 116);
+    font-weight: 1000;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 5rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a:active {
+    color: rgb(12, 99, 116);
+    border-bottom: 3px solid;
+}
+
+.navbar i {
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 60px;
+    padding-bottom: 4rem;
+}
+
+.home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.home .home-content h1 {
+    font-size: 5rem;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.home img {
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(97, 165, 179);
+    height: 500px;
+}
+
+.home.img img {
+    position: relative;
+}
+
+.social-icons a {
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; height: 3rem;
+    border: 2px solid rgb(12, 99, 116);
+    border-radius: 50%;
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+.social-icons a:hover {
+    border: 2px solid white;
+    transform: scale(1.4);
+    background-color: rgb(12, 99, 116);
+    box-shadow: 0 0 25px white;
+}
+
+.btncontact {
+    display: inline-block;
+    padding: 1rem;
+    background-color: black;
+    border: solid 2px rgb(12, 99, 116);
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    cursor: pointer;
+    margin-left: 13px;
+}
+.btncontact:hover {
+    transform: scale(1.1);
+    border: 2px solid white;
+    box-shadow: 0 0 25px white;
+    background-color: rgb(12, 99, 116);
+}
+
+.changing-text {
+    font-size: 34px;
+    font-weight: 500;
+    min-width: 280px;
+}
+
+.changing-text span::before {
+    content: "software developer";
+    color: rgb(97, 165, 179);
+    animation: words 20s infinite;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(23, 23, 23);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid white;
+    }
+}
+
+@keyframes words {
+    0%, 25% {
+        content:"Beginner Web Developer";
+    }
+    26%, 50%{
+        content:"Student";
+    }
+    51%, 75%{
+        content:"Cartoonist";
+    }
+    76%, 100%{
+        content:"Realism Artist";
+    }
+}
+
+
+/* Responsive menu for phones */
+
+@media (max-width :640px){
+    .header {
+        position: absolute;
+    }
+
+    .home {
+        flex-direction: column;
+        margin: 4rem;
+    }
+
+    .home-img img {
+        width: 40vh;
+        height: 40vh;
+        margin-top: 11rem;
+    }
+
+    .header > i {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+
+    .navbar i {
+        display:contents;
+    }
+}
+
+/* @media(max-width:650px) {
+    nav {
+        position:absolute;
+        display: none;
+        top:0;
+        right: 0;
+        width: 40px;
+        border-left: 5px solid rgb(12, 99, 116); 
+        border-bottom: 5px solid rgb(12, 99, 116);
+        border-bottom-left-radius: 2rem;
+        background-color: black;
+        border-top: 0.1rem solid blueviolet;
+    }
+
+    nav:active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a:active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem;
+    }
+} */
