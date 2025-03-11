@@ -66,6 +66,10 @@ fieldset.outbord {
     background-color: rgb(23, 23, 23);
 }
 
+main {
+    height: 1000px;
+}
+
 label { 
    display: block;
    padding: 2px;
@@ -80,7 +84,7 @@ form input {
 }
 
 textarea {
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 20px;
     margin-bottom: 15px;
     padding: 5px;
