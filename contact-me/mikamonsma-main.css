@@ -83,8 +83,12 @@ section {
     height: 500px;
 }
 
-.home.img img {
-    position: relative;
+.home-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(97, 165, 179);
 }
 
 .social-icons a {
