@@ -162,10 +162,10 @@ footer {
         content:"Beginner Web Developer";
     }
     26%, 50%{
-        content:"Student";
+        content:"Studious Student";
     }
     51%, 75%{
-        content:"Cartoonist";
+        content:"Motivated Learner";
     }
     76%, 100%{
         content:"Beginner Software Developer";
@@ -173,7 +173,7 @@ footer {
 }
 
 
-/* Responsive menu for phones */
+/* Responsive menu for phones 
 
 @media (max-width :640px){
     .header {
